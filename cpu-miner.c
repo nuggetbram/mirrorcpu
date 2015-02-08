@@ -103,13 +103,13 @@ struct workio_cmd {
 enum sha256_algos {
 	ALGO_SCRYPT,		/* scrypt(1024,1,1) */
 	ALGO_SHA256D,		/* SHA-256d */
-	ALGO_QUBIT,
+	ALGO_MIRROR,
 };
 
 static const char *algo_names[] = {
 	[ALGO_SCRYPT]		= "scrypt",
 	[ALGO_SHA256D]		= "sha256d",
-	[ALGO_QUBIT]		= "qubit",
+	[ALGO_MIRROR]		= "mirror",
 };
 
 bool opt_hashdebug = false;
@@ -170,7 +170,7 @@ Options:\n\
   -a, --algo=ALGO       specify the algorithm to use\n\
                           scrypt    scrypt(1024, 1, 1) (default)\n\
                           sha256d   SHA-256d\n\
-                          qubit     QubitCoin\n\
+                          mirror     Mirror\n\
   -o, --url=URL         URL of mining server (default: " DEF_RPC_URL ")\n\
   -O, --userpass=U:P    username:password pair for mining server\n\
   -u, --user=USERNAME   username for mining server\n\
@@ -794,8 +794,8 @@ static void *miner_thread(void *userdata)
 			rc = scanhash_sha256d(thr_id, work.data, work.target,
 			                      max_nonce, &hashes_done);
 			break;
-		case ALGO_QUBIT:
-			rc = scanhash_qubit(thr_id, work.data, work.target,
+		case ALGO_MIRROR:
+			rc = scanhash_mirror(thr_id, work.data, work.target,
 			                      max_nonce, &hashes_done);
 			break;
 		default:
@@ -1318,9 +1318,9 @@ int main(int argc, char *argv[])
 	/* parse command line */
 	parse_cmdline(argc, argv);
 
-	if (opt_algo==ALGO_QUBIT)
+	if (opt_algo==ALGO_MIRROR)
 	{
-		init_qubithash_contexts();
+		init_mirrorhash_contexts();
 	}
 	
 	
