@@ -1,6 +1,3 @@
-minerd-sha2-arm.o: sha2-arm.S /usr/include/stdc-predef.h \
- cpuminer-config.h
-
-/usr/include/stdc-predef.h:
+minerd-sha2-arm.o: sha2-arm.S cpuminer-config.h
 
 cpuminer-config.h:

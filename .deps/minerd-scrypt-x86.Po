@@ -1,6 +1,3 @@
-minerd-scrypt-x86.o: scrypt-x86.S /usr/include/stdc-predef.h \
- cpuminer-config.h
-
-/usr/include/stdc-predef.h:
+minerd-scrypt-x86.o: scrypt-x86.S cpuminer-config.h
 
 cpuminer-config.h:

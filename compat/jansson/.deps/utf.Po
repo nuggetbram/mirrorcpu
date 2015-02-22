@@ -1,67 +1,48 @@
-utf.o: utf.c /usr/include/stdc-predef.h /usr/include/string.h \
- /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
- /usr/include/x86_64-linux-gnu/bits/wordsize.h \
- /usr/include/x86_64-linux-gnu/gnu/stubs.h \
- /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.9/include/stddef.h \
- /usr/include/xlocale.h /usr/include/x86_64-linux-gnu/bits/string.h \
- /usr/include/x86_64-linux-gnu/bits/string2.h /usr/include/endian.h \
- /usr/include/x86_64-linux-gnu/bits/endian.h \
- /usr/include/x86_64-linux-gnu/bits/byteswap.h \
- /usr/include/x86_64-linux-gnu/bits/types.h \
- /usr/include/x86_64-linux-gnu/bits/typesizes.h \
- /usr/include/x86_64-linux-gnu/bits/byteswap-16.h /usr/include/stdlib.h \
- /usr/include/x86_64-linux-gnu/bits/string3.h utf.h config.h \
- /usr/include/inttypes.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.9/include/stdint.h /usr/include/stdint.h \
- /usr/include/x86_64-linux-gnu/bits/wchar.h
+utf.o: utf.c \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/string.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/_mingw.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/_mingw_mac.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/vadefs.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/sec_api/string_s.h \
+ utf.h config.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/inttypes.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/include/stdint.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/stdint.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/include/stddef.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/stddef.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/_mingw_print_push.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/_mingw_print_pop.h
 
-/usr/include/stdc-predef.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/string.h:
 
-/usr/include/string.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/_mingw.h:
 
-/usr/include/features.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/_mingw_mac.h:
 
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/vadefs.h:
 
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/sdks/_mingw_directx.h:
 
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/sdks/_mingw_ddk.h:
 
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/4.9/include/stddef.h:
-
-/usr/include/xlocale.h:
-
-/usr/include/x86_64-linux-gnu/bits/string.h:
-
-/usr/include/x86_64-linux-gnu/bits/string2.h:
-
-/usr/include/endian.h:
-
-/usr/include/x86_64-linux-gnu/bits/endian.h:
-
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
-
-/usr/include/x86_64-linux-gnu/bits/types.h:
-
-/usr/include/x86_64-linux-gnu/bits/typesizes.h:
-
-/usr/include/x86_64-linux-gnu/bits/byteswap-16.h:
-
-/usr/include/stdlib.h:
-
-/usr/include/x86_64-linux-gnu/bits/string3.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/sec_api/string_s.h:
 
 utf.h:
 
 config.h:
 
-/usr/include/inttypes.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/inttypes.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/4.9/include/stdint.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/include/stdint.h:
 
-/usr/include/stdint.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/stdint.h:
 
-/usr/include/x86_64-linux-gnu/bits/wchar.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/include/stddef.h:
+
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/stddef.h:
+
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/_mingw_print_push.h:
+
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/_mingw_print_pop.h:

@@ -1,98 +1,44 @@
-strbuffer.o: strbuffer.c /usr/include/stdc-predef.h /usr/include/stdlib.h \
- /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
- /usr/include/x86_64-linux-gnu/bits/wordsize.h \
- /usr/include/x86_64-linux-gnu/gnu/stubs.h \
- /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.9/include/stddef.h \
- /usr/include/x86_64-linux-gnu/bits/waitflags.h \
- /usr/include/x86_64-linux-gnu/bits/waitstatus.h /usr/include/endian.h \
- /usr/include/x86_64-linux-gnu/bits/endian.h \
- /usr/include/x86_64-linux-gnu/bits/byteswap.h \
- /usr/include/x86_64-linux-gnu/bits/types.h \
- /usr/include/x86_64-linux-gnu/bits/typesizes.h \
- /usr/include/x86_64-linux-gnu/bits/byteswap-16.h /usr/include/xlocale.h \
- /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/time.h \
- /usr/include/x86_64-linux-gnu/sys/select.h \
- /usr/include/x86_64-linux-gnu/bits/select.h \
- /usr/include/x86_64-linux-gnu/bits/sigset.h \
- /usr/include/x86_64-linux-gnu/bits/time.h \
- /usr/include/x86_64-linux-gnu/bits/select2.h \
- /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
- /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h /usr/include/alloca.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib.h /usr/include/string.h \
- /usr/include/x86_64-linux-gnu/bits/string.h \
- /usr/include/x86_64-linux-gnu/bits/string2.h \
- /usr/include/x86_64-linux-gnu/bits/string3.h strbuffer.h util.h
+strbuffer.o: strbuffer.c \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/stdlib.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/_mingw.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/_mingw_mac.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/vadefs.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/include-fixed/limits.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/include-fixed/syslimits.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/limits.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/malloc.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/string.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/sec_api/string_s.h \
+ strbuffer.h util.h
 
-/usr/include/stdc-predef.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/stdlib.h:
 
-/usr/include/stdlib.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/_mingw.h:
 
-/usr/include/features.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/_mingw_mac.h:
 
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/vadefs.h:
 
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/sdks/_mingw_directx.h:
 
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/sdks/_mingw_ddk.h:
 
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/include-fixed/limits.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/4.9/include/stddef.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/include-fixed/syslimits.h:
 
-/usr/include/x86_64-linux-gnu/bits/waitflags.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/limits.h:
 
-/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/sec_api/stdlib_s.h:
 
-/usr/include/endian.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/malloc.h:
 
-/usr/include/x86_64-linux-gnu/bits/endian.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/string.h:
 
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
-
-/usr/include/x86_64-linux-gnu/bits/types.h:
-
-/usr/include/x86_64-linux-gnu/bits/typesizes.h:
-
-/usr/include/x86_64-linux-gnu/bits/byteswap-16.h:
-
-/usr/include/xlocale.h:
-
-/usr/include/x86_64-linux-gnu/sys/types.h:
-
-/usr/include/time.h:
-
-/usr/include/x86_64-linux-gnu/sys/select.h:
-
-/usr/include/x86_64-linux-gnu/bits/select.h:
-
-/usr/include/x86_64-linux-gnu/bits/sigset.h:
-
-/usr/include/x86_64-linux-gnu/bits/time.h:
-
-/usr/include/x86_64-linux-gnu/bits/select2.h:
-
-/usr/include/x86_64-linux-gnu/sys/sysmacros.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
-
-/usr/include/alloca.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib.h:
-
-/usr/include/string.h:
-
-/usr/include/x86_64-linux-gnu/bits/string.h:
-
-/usr/include/x86_64-linux-gnu/bits/string2.h:
-
-/usr/include/x86_64-linux-gnu/bits/string3.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/sec_api/string_s.h:
 
 strbuffer.h:
 

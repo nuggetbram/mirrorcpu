@@ -1,330 +1,351 @@
-minerd-cpu-miner.o: cpu-miner.c /usr/include/stdc-predef.h \
- cpuminer-config.h /usr/include/stdio.h /usr/include/features.h \
- /usr/include/x86_64-linux-gnu/sys/cdefs.h \
- /usr/include/x86_64-linux-gnu/bits/wordsize.h \
- /usr/include/x86_64-linux-gnu/gnu/stubs.h \
- /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.9/include/stddef.h \
- /usr/include/x86_64-linux-gnu/bits/types.h \
- /usr/include/x86_64-linux-gnu/bits/typesizes.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/wchar.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.9/include/stdarg.h \
- /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
- /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
- /usr/include/x86_64-linux-gnu/bits/stdio.h \
- /usr/include/x86_64-linux-gnu/bits/stdio2.h /usr/include/stdlib.h \
- /usr/include/x86_64-linux-gnu/bits/waitflags.h \
- /usr/include/x86_64-linux-gnu/bits/waitstatus.h /usr/include/endian.h \
- /usr/include/x86_64-linux-gnu/bits/endian.h \
- /usr/include/x86_64-linux-gnu/bits/byteswap.h \
- /usr/include/x86_64-linux-gnu/bits/byteswap-16.h /usr/include/xlocale.h \
- /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/time.h \
- /usr/include/x86_64-linux-gnu/sys/select.h \
- /usr/include/x86_64-linux-gnu/bits/select.h \
- /usr/include/x86_64-linux-gnu/bits/sigset.h \
- /usr/include/x86_64-linux-gnu/bits/time.h \
- /usr/include/x86_64-linux-gnu/bits/select2.h \
- /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
- /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h /usr/include/alloca.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib.h /usr/include/string.h \
- /usr/include/x86_64-linux-gnu/bits/string.h \
- /usr/include/x86_64-linux-gnu/bits/string2.h \
- /usr/include/x86_64-linux-gnu/bits/string3.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.9/include/stdbool.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.9/include/stdint.h /usr/include/stdint.h \
- /usr/include/x86_64-linux-gnu/bits/wchar.h /usr/include/unistd.h \
- /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
- /usr/include/x86_64-linux-gnu/bits/environments.h \
- /usr/include/x86_64-linux-gnu/bits/confname.h /usr/include/getopt.h \
- /usr/include/x86_64-linux-gnu/bits/unistd.h \
- /usr/include/x86_64-linux-gnu/sys/time.h \
- /usr/include/x86_64-linux-gnu/bits/timex.h /usr/include/errno.h \
- /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
- /usr/include/x86_64-linux-gnu/asm/errno.h \
- /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
- /usr/include/signal.h /usr/include/x86_64-linux-gnu/bits/signum.h \
- /usr/include/x86_64-linux-gnu/bits/siginfo.h \
- /usr/include/x86_64-linux-gnu/bits/sigaction.h \
- /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
- /usr/include/x86_64-linux-gnu/bits/sigstack.h \
- /usr/include/x86_64-linux-gnu/sys/ucontext.h \
- /usr/include/x86_64-linux-gnu/bits/sigthread.h \
- /usr/include/x86_64-linux-gnu/sys/resource.h \
- /usr/include/x86_64-linux-gnu/bits/resource.h \
- /usr/include/x86_64-linux-gnu/sys/param.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.9/include-fixed/limits.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.9/include-fixed/syslimits.h \
- /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
- /usr/include/x86_64-linux-gnu/bits/local_lim.h \
- /usr/include/linux/limits.h \
- /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
- /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
- /usr/include/x86_64-linux-gnu/bits/param.h /usr/include/linux/param.h \
- /usr/include/x86_64-linux-gnu/asm/param.h \
- /usr/include/asm-generic/param.h \
- /usr/include/x86_64-linux-gnu/sys/sysctl.h /usr/include/linux/sysctl.h \
- /usr/include/linux/kernel.h /usr/include/linux/types.h \
- /usr/include/x86_64-linux-gnu/bits/sysctl.h compat/jansson/jansson.h \
- /usr/include/curl/curl.h /usr/include/curl/curlver.h \
- /usr/include/curl/curlbuild.h /usr/include/x86_64-linux-gnu/sys/socket.h \
- /usr/include/x86_64-linux-gnu/sys/uio.h \
- /usr/include/x86_64-linux-gnu/bits/uio.h \
- /usr/include/x86_64-linux-gnu/bits/socket.h \
- /usr/include/x86_64-linux-gnu/bits/socket_type.h \
- /usr/include/x86_64-linux-gnu/bits/sockaddr.h \
- /usr/include/x86_64-linux-gnu/asm/socket.h \
- /usr/include/asm-generic/socket.h \
- /usr/include/x86_64-linux-gnu/asm/sockios.h \
- /usr/include/asm-generic/sockios.h \
- /usr/include/x86_64-linux-gnu/bits/socket2.h \
- /usr/include/curl/curlrules.h /usr/include/curl/easy.h \
- /usr/include/curl/multi.h /usr/include/curl/curl.h \
- /usr/include/curl/typecheck-gcc.h compat.h miner.h \
- /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/x86_64-linux-gnu/bits/sched.h \
- /usr/include/x86_64-linux-gnu/bits/setjmp.h /usr/include/syslog.h \
- /usr/include/x86_64-linux-gnu/sys/syslog.h \
- /usr/include/x86_64-linux-gnu/bits/syslog-path.h \
- /usr/include/x86_64-linux-gnu/bits/syslog.h
-
-/usr/include/stdc-predef.h:
+minerd-cpu-miner.o: cpu-miner.c cpuminer-config.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/stdio.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/_mingw.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/_mingw_mac.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/vadefs.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/_mingw_print_push.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/_mingw_off_t.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/_mingw_print_pop.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/stdlib.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/include-fixed/limits.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/include-fixed/syslimits.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/limits.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/malloc.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/string.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/sec_api/string_s.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/include/stdbool.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/include/stdint.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/stdint.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/include/stddef.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/stddef.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/unistd.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/io.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/sec_api/io_s.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/process.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/sys/types.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/getopt.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/pthread_unistd.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/sys/time.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/time.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/_timeval.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/sec_api/time_s.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/sys/timeb.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/pthread_time.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/windows.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/sdkddkver.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/excpt.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/include/stdarg.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/stdarg.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/_mingw_stdarg.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/windef.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/winnt.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/_mingw_unicode.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/ctype.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/specstrings.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/basetsd.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/guiddef.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/intrin.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/setjmp.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/crtdefs.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/include/x86intrin.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/include/ia32intrin.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/include/mmintrin.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/include/xmmintrin.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/include/mm_malloc.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/include/emmintrin.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/include/immintrin.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/pshpack4.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/poppack.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/pshpack4.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/pshpack2.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/poppack.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/pshpack2.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/pshpack8.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/winbase.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/winerror.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/wingdi.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/pshpack1.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/winuser.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/tvout.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/winnls.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/wincon.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/winver.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/winreg.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/reason.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/winnetwk.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/virtdisk.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/stralign.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/sec_api/stralign_s.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/winsvc.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/mcx.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/imm.h \
+ compat/jansson/jansson.h f:/BTCDeps/MinGW64/include/curl/curl.h \
+ f:/BTCDeps/MinGW64/include/curl/curlver.h \
+ f:/BTCDeps/MinGW64/include/curl/curlbuild.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/winsock2.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/psdk_inc/_ws1_undef.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/_bsd_types.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/inaddr.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/psdk_inc/_socket_types.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/psdk_inc/_fd_types.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/psdk_inc/_ip_types.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/psdk_inc/_wsadata.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/ws2def.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/psdk_inc/_wsa_errnos.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/qos.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/ws2tcpip.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/psdk_inc/_ip_mreq1.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/ws2ipdef.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/in6addr.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/mstcpip.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/inttypes.h \
+ f:/BTCDeps/MinGW64/include/curl/curlrules.h \
+ f:/BTCDeps/MinGW64/include/curl/easy.h \
+ f:/BTCDeps/MinGW64/include/curl/multi.h \
+ f:/BTCDeps/MinGW64/include/curl/curl.h \
+ f:/BTCDeps/MinGW64/include/curl/typecheck-gcc.h compat.h miner.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/pthread.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/pthreads_win32_config.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/errno.h \
+ f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/sched.h
 
 cpuminer-config.h:
 
-/usr/include/stdio.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/stdio.h:
 
-/usr/include/features.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/_mingw.h:
 
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/_mingw_mac.h:
 
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/vadefs.h:
 
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/sdks/_mingw_directx.h:
 
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/sdks/_mingw_ddk.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/4.9/include/stddef.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/_mingw_print_push.h:
 
-/usr/include/x86_64-linux-gnu/bits/types.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/_mingw_off_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/typesizes.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/sec_api/stdio_s.h:
 
-/usr/include/libio.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/_mingw_print_pop.h:
 
-/usr/include/_G_config.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/stdlib.h:
 
-/usr/include/wchar.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/include-fixed/limits.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/4.9/include/stdarg.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/include-fixed/syslimits.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/limits.h:
 
-/usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/sec_api/stdlib_s.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdio.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/malloc.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdio2.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/string.h:
 
-/usr/include/stdlib.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/sec_api/string_s.h:
 
-/usr/include/x86_64-linux-gnu/bits/waitflags.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/include/stdbool.h:
 
-/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/include/stdint.h:
 
-/usr/include/endian.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/stdint.h:
 
-/usr/include/x86_64-linux-gnu/bits/endian.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/include/stddef.h:
 
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/stddef.h:
 
-/usr/include/x86_64-linux-gnu/bits/byteswap-16.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/unistd.h:
 
-/usr/include/xlocale.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/io.h:
 
-/usr/include/x86_64-linux-gnu/sys/types.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/sec_api/io_s.h:
 
-/usr/include/time.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/process.h:
 
-/usr/include/x86_64-linux-gnu/sys/select.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/sys/types.h:
 
-/usr/include/x86_64-linux-gnu/bits/select.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/getopt.h:
 
-/usr/include/x86_64-linux-gnu/bits/sigset.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/pthread_unistd.h:
 
-/usr/include/x86_64-linux-gnu/bits/time.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/sys/time.h:
 
-/usr/include/x86_64-linux-gnu/bits/select2.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/time.h:
 
-/usr/include/x86_64-linux-gnu/sys/sysmacros.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/_timeval.h:
 
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/sec_api/time_s.h:
 
-/usr/include/alloca.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/sys/timeb.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/pthread_time.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdlib.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/windows.h:
 
-/usr/include/string.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/sdkddkver.h:
 
-/usr/include/x86_64-linux-gnu/bits/string.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/excpt.h:
 
-/usr/include/x86_64-linux-gnu/bits/string2.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/include/stdarg.h:
 
-/usr/include/x86_64-linux-gnu/bits/string3.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/stdarg.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/4.9/include/stdbool.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/_mingw_stdarg.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/4.9/include/stdint.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/windef.h:
 
-/usr/include/stdint.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/winnt.h:
 
-/usr/include/x86_64-linux-gnu/bits/wchar.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/_mingw_unicode.h:
 
-/usr/include/unistd.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/ctype.h:
 
-/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/specstrings.h:
 
-/usr/include/x86_64-linux-gnu/bits/environments.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/basetsd.h:
 
-/usr/include/x86_64-linux-gnu/bits/confname.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/guiddef.h:
 
-/usr/include/getopt.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/intrin.h:
 
-/usr/include/x86_64-linux-gnu/bits/unistd.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/setjmp.h:
 
-/usr/include/x86_64-linux-gnu/sys/time.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/crtdefs.h:
 
-/usr/include/x86_64-linux-gnu/bits/timex.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/include/x86intrin.h:
 
-/usr/include/errno.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/include/ia32intrin.h:
 
-/usr/include/x86_64-linux-gnu/bits/errno.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/include/mmintrin.h:
 
-/usr/include/linux/errno.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/include/xmmintrin.h:
 
-/usr/include/x86_64-linux-gnu/asm/errno.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/include/mm_malloc.h:
 
-/usr/include/asm-generic/errno.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/include/emmintrin.h:
 
-/usr/include/asm-generic/errno-base.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/include/immintrin.h:
 
-/usr/include/signal.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/pshpack4.h:
 
-/usr/include/x86_64-linux-gnu/bits/signum.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/poppack.h:
 
-/usr/include/x86_64-linux-gnu/bits/siginfo.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/pshpack4.h:
 
-/usr/include/x86_64-linux-gnu/bits/sigaction.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/pshpack2.h:
 
-/usr/include/x86_64-linux-gnu/bits/sigcontext.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/poppack.h:
 
-/usr/include/x86_64-linux-gnu/bits/sigstack.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/pshpack2.h:
 
-/usr/include/x86_64-linux-gnu/sys/ucontext.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/pshpack8.h:
 
-/usr/include/x86_64-linux-gnu/bits/sigthread.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/winbase.h:
 
-/usr/include/x86_64-linux-gnu/sys/resource.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/winerror.h:
 
-/usr/include/x86_64-linux-gnu/bits/resource.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/wingdi.h:
 
-/usr/include/x86_64-linux-gnu/sys/param.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/pshpack1.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/4.9/include-fixed/limits.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/winuser.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/4.9/include-fixed/syslimits.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/tvout.h:
 
-/usr/include/limits.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/winnls.h:
 
-/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/wincon.h:
 
-/usr/include/x86_64-linux-gnu/bits/local_lim.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/winver.h:
 
-/usr/include/linux/limits.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/winreg.h:
 
-/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/reason.h:
 
-/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/winnetwk.h:
 
-/usr/include/x86_64-linux-gnu/bits/param.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/virtdisk.h:
 
-/usr/include/linux/param.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/stralign.h:
 
-/usr/include/x86_64-linux-gnu/asm/param.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/sec_api/stralign_s.h:
 
-/usr/include/asm-generic/param.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/winsvc.h:
 
-/usr/include/x86_64-linux-gnu/sys/sysctl.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/mcx.h:
 
-/usr/include/linux/sysctl.h:
-
-/usr/include/linux/kernel.h:
-
-/usr/include/linux/types.h:
-
-/usr/include/x86_64-linux-gnu/bits/sysctl.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/imm.h:
 
 compat/jansson/jansson.h:
 
-/usr/include/curl/curl.h:
+f:/BTCDeps/MinGW64/include/curl/curl.h:
 
-/usr/include/curl/curlver.h:
+f:/BTCDeps/MinGW64/include/curl/curlver.h:
 
-/usr/include/curl/curlbuild.h:
+f:/BTCDeps/MinGW64/include/curl/curlbuild.h:
 
-/usr/include/x86_64-linux-gnu/sys/socket.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/winsock2.h:
 
-/usr/include/x86_64-linux-gnu/sys/uio.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/psdk_inc/_ws1_undef.h:
 
-/usr/include/x86_64-linux-gnu/bits/uio.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/_bsd_types.h:
 
-/usr/include/x86_64-linux-gnu/bits/socket.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/inaddr.h:
 
-/usr/include/x86_64-linux-gnu/bits/socket_type.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/psdk_inc/_socket_types.h:
 
-/usr/include/x86_64-linux-gnu/bits/sockaddr.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/psdk_inc/_fd_types.h:
 
-/usr/include/x86_64-linux-gnu/asm/socket.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/psdk_inc/_ip_types.h:
 
-/usr/include/asm-generic/socket.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/psdk_inc/_wsadata.h:
 
-/usr/include/x86_64-linux-gnu/asm/sockios.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/ws2def.h:
 
-/usr/include/asm-generic/sockios.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/psdk_inc/_wsa_errnos.h:
 
-/usr/include/x86_64-linux-gnu/bits/socket2.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/qos.h:
 
-/usr/include/curl/curlrules.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/ws2tcpip.h:
 
-/usr/include/curl/easy.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/psdk_inc/_ip_mreq1.h:
 
-/usr/include/curl/multi.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/ws2ipdef.h:
 
-/usr/include/curl/curl.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/in6addr.h:
 
-/usr/include/curl/typecheck-gcc.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/mstcpip.h:
+
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/inttypes.h:
+
+f:/BTCDeps/MinGW64/include/curl/curlrules.h:
+
+f:/BTCDeps/MinGW64/include/curl/easy.h:
+
+f:/BTCDeps/MinGW64/include/curl/multi.h:
+
+f:/BTCDeps/MinGW64/include/curl/curl.h:
+
+f:/BTCDeps/MinGW64/include/curl/typecheck-gcc.h:
 
 compat.h:
 
 miner.h:
 
-/usr/include/pthread.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/pthread.h:
 
-/usr/include/sched.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/pthreads_win32_config.h:
 
-/usr/include/x86_64-linux-gnu/bits/sched.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/errno.h:
 
-/usr/include/x86_64-linux-gnu/bits/setjmp.h:
-
-/usr/include/syslog.h:
-
-/usr/include/x86_64-linux-gnu/sys/syslog.h:
-
-/usr/include/x86_64-linux-gnu/bits/syslog-path.h:
-
-/usr/include/x86_64-linux-gnu/bits/syslog.h:
+f:\btcdeps\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/4.7.0/../../../../x86_64-w64-mingw32/include/sched.h:
